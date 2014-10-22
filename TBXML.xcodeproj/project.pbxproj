@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8290352714D9F5B200ACF7E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8290352614D9F5B200ACF7E4 /* Foundation.framework */; };
-		8290353414D9F5B200ACF7E4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829FA0B114D5B52A00D18697 /* SenTestingKit.framework */; };
 		8290353714D9F5B200ACF7E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8290352614D9F5B200ACF7E4 /* Foundation.framework */; };
 		8290353A14D9F5B200ACF7E4 /* libTBXML-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8290352514D9F5B200ACF7E4 /* libTBXML-iOS.a */; };
 		8290354B14D9F6B100ACF7E4 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 829FA0C914D5B55D00D18697 /* TBXML+Compression.m */; };
@@ -24,7 +23,6 @@
 		8290356214D9F8F300ACF7E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8290355A14D9F8BF00ACF7E4 /* InfoPlist.strings */; };
 		8290356314D9F8F600ACF7E4 /* books.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8290355914D9F8BF00ACF7E4 /* books.xml */; };
 		829FA0A014D5B52A00D18697 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829FA09F14D5B52A00D18697 /* Cocoa.framework */; };
-		829FA0B214D5B52A00D18697 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829FA0B114D5B52A00D18697 /* SenTestingKit.framework */; };
 		829FA0B314D5B52A00D18697 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829FA09F14D5B52A00D18697 /* Cocoa.framework */; };
 		829FA0B614D5B52A00D18697 /* libTBXML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 829FA09C14D5B52A00D18697 /* libTBXML.a */; };
 		829FA0D014D5B55D00D18697 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 829FA0C914D5B55D00D18697 /* TBXML+Compression.m */; };
@@ -66,7 +64,6 @@
 		829FA0A314D5B52A00D18697 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		829FA0A414D5B52A00D18697 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		829FA0B014D5B52A00D18697 /* TBXMLTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBXMLTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		829FA0B114D5B52A00D18697 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		829FA0C914D5B55D00D18697 /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+Compression.m"; sourceTree = "<group>"; };
 		829FA0CA14D5B55D00D18697 /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+HTTP.m"; sourceTree = "<group>"; };
 		829FA0CB14D5B55D00D18697 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
@@ -88,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8290353414D9F5B200ACF7E4 /* SenTestingKit.framework in Frameworks */,
 				8290353714D9F5B200ACF7E4 /* Foundation.framework in Frameworks */,
 				8290353A14D9F5B200ACF7E4 /* libTBXML-iOS.a in Frameworks */,
 			);
@@ -106,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				829FA0B214D5B52A00D18697 /* SenTestingKit.framework in Frameworks */,
 				829FA0B314D5B52A00D18697 /* Cocoa.framework in Frameworks */,
 				829FA0B614D5B52A00D18697 /* libTBXML.a in Frameworks */,
 			);
@@ -171,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				829FA09F14D5B52A00D18697 /* Cocoa.framework */,
-				829FA0B114D5B52A00D18697 /* SenTestingKit.framework */,
 				8290352614D9F5B200ACF7E4 /* Foundation.framework */,
 				829FA0A114D5B52A00D18697 /* Other Frameworks */,
 			);
@@ -265,7 +259,7 @@
 			name = "TBXML-iOSTests";
 			productName = "TBXML-iOSTests";
 			productReference = 8290353314D9F5B200ACF7E4 /* TBXML-iOSTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		829FA09B14D5B52A00D18697 /* TBXML */ = {
 			isa = PBXNativeTarget;
@@ -301,7 +295,7 @@
 			name = TBXMLTests;
 			productName = TBXMLTests;
 			productReference = 829FA0B014D5B52A00D18697 /* TBXMLTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -309,7 +303,8 @@
 		829FA09314D5B52A00D18697 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastTestingUpgradeCheck = 0610;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "71 Squared";
 			};
 			buildConfigurationList = 829FA09614D5B52A00D18697 /* Build configuration list for PBXProject "TBXML" */;
@@ -438,7 +433,6 @@
 		8290354414D9F5B200ACF7E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/TBXML_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBXML-Support/TBXML-iOS-Prefix.pch";
@@ -453,7 +447,6 @@
 		8290354514D9F5B200ACF7E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/TBXML_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBXML-Support/TBXML-iOS-Prefix.pch";
@@ -469,7 +462,6 @@
 		8290354614D9F5B200ACF7E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -487,7 +479,6 @@
 		8290354714D9F5B200ACF7E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -507,9 +498,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -523,6 +521,9 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -534,16 +535,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
@@ -553,6 +564,7 @@
 		829FA0C314D5B52A00D18697 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBXML-Support/TBXML-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -562,6 +574,7 @@
 		829FA0C414D5B52A00D18697 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBXML-Support/TBXML-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -571,24 +584,24 @@
 		829FA0C614D5B52A00D18697 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBXML-Support/TBXML-Prefix.pch";
 				INFOPLIST_FILE = "TBXML-Tests/Supporting Files/TBXMLTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
 		829FA0C714D5B52A00D18697 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TBXML-Support/TBXML-Prefix.pch";
 				INFOPLIST_FILE = "TBXML-Tests/Supporting Files/TBXMLTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
