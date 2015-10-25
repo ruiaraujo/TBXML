@@ -57,21 +57,14 @@
 @implementation NSURLConnection (TBXML_HTTP)
 
 + (void)tbxmlAsyncRequest:(NSURLRequest *)request success:(TBXMLAsyncRequestSuccessBlock)successBlock failure:(TBXMLAsyncRequestFailureBlock)failureBlock {
-    
-	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
-		@autoreleasepool {
-			NSURLResponse *response = nil;
-			NSError *error = nil;
-			NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-        
-			if (error) {
-				failureBlock(data,error);
-			} else {
-				successBlock(data,response);
-			}
-		}		
-	});
+	[[[NSURLSession sharedSession] dataTaskWithRequest:request 
+		completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {  
+		if (error) {
+			failureBlock(data,error);
+		} else {
+			successBlock(data,response);
+		}
+    }] resume];
 }
 
 @end
